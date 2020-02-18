@@ -1,0 +1,278 @@
+<html>
+
+<head>
+<title>Portfolio</title>
+
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet"  href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet"  href="style.css">
+	<link rel="stylesheet"  href="responsive.css">
+	<link rel="stylesheet"  href="js/animate-scroll.js">
+	<link rel="stylesheet"  href="js/EaselPlugin.min.js">
+	<link rel="stylesheet"  href="js/ScrollToPlugin.min.js">
+	<link rel="stylesheet"  href="js/TweenMax.min.js">
+	<link href="https://fonts.googleapis.com/css?family=Flamenco" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+	<link rel="stylesheet"  href="font-awesome/css/font-awesome.min.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script>
+	$(document).animateScroll();
+	</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+</script>
+
+
+
+</head>
+
+<body>
+
+<aside>
+	<nav  class="animated slideInDown">
+		<img src="images/robin.jpg" alt=""/>
+		<a href="#home"  class="animated slideInUp">
+		<i class="fa fa-home"></i>
+		<p>Home</p>
+		</a>
+		
+		<a href="#about">
+		<i class="fa fa-user"></i>
+		<p>About</p>
+		</a>
+		
+		<a href="#folio">
+		<i class="fa fa-image"></i>
+		<p>Portfolio</p>
+		</a>
+		
+		<a href="#resume">
+		<i class="fa fa-graduation-cap d-block"></i>
+		<p>Resume</p>
+		</a>
+		
+		<a href="#contact">
+		<i class="fa fa-envelope"></i>
+		<p>Contact</p>
+		</a>
+		
+	</nav>
+</aside>
+
+	<nav class="mobile-nav">
+	
+
+	
+	
+	</nav>
+
+	<main class="animated slideInDown">
+	
+	
+	<header class="home" id="home"> <br><br>
+		<h1>Mahmudul Hasan</h1>
+		<h5><span class='colorchange'> Designer || Developer </span></h5>
+		<img src="images/robin.jpg" alt=""/>
+	</header>
+	
+	
+	
+	
+	</main>
+	
+	<section class="about" id="about">
+	<h2><span class='ccolor'>About Me</span></h2>
+	<br>
+	<p>
+	<span class='myself'>Hello, I am Mahmudul Hasan</span>. I am a Designer and Developer,life long learner
+	and ready for new opportunities. A bit about me, I love music and arts, teach and all the
+	things creative.
+	</p>
+	
+	<p>
+	I beleive in user centered design and deliver the best possible experiences to people. I have
+	experiences in Html-Css, Flexbox , Javascript , Php , Jquery and Photoshop as well.
+	</p>
+	
+	<h3><span class='myself'>My Skills</span></h3>
+	<p><span class='skillset'>Figma</span></p>
+	<div class="container">
+		<div class="skills figma">95%</div>
+	</div>
+	
+	<p><span class='skillset'>Html</span></p>
+	<div class="container">
+		<div class="skills Html">90%</div>
+	</div>
+	
+	<p><span class='skillset'>Css</span></p>
+	<div class="container">
+		<div class="skills Css">90%</div>
+	</div>
+	
+	<p><span class='skillset'>Php</span></p>
+	<div class="container">
+		<div class="skills Php">85%</div>
+	</div>
+	
+	<p><span class='skillset'>Javascript</span></p>
+	<div class="container">
+		<div class="skills javascript">80%</div>
+	</div>
+	</section>
+
+
+
+	<section class="folio" id="folio">
+	<h2><span class='ccolor'>Portfolio</span></h2>
+	<br>
+		<div class="row-halves">
+			<div class="col" data-animate-scroll='{"x": "-500", 
+                    "y": "-200", 
+                    "scaleX": "0.25",
+                    "scaleY": "0.25", 
+                    "alpha": "0", 
+                    "duration": "1.5",
+                    "rotation":"45"}'>
+			<img src="images/blog2.jpg" alt="" class="image1 animated tada infinite slow"/>
+			<h3>Business</h3>
+			<p>
+			Building responsive and thoughtful sites for
+			small and large business.
+			</p>
+			</div>
+			
+			<div class="col">
+			<img src="images/blog3.jpg" alt=""class="image1 animated tada infinite slow"/>
+			<h3>Mobile</h3>
+			<p>
+			Fully responsive and mobile ready designs for
+			small and large business.
+			</p>
+			</div>
+		</div>
+		
+		<div class="row-halves">
+			<div class="col">
+			<img src="images/blog2.jpg" alt="" class="image1 animated tada infinite slow"/>
+			<h3>UX Design</h3>
+			<p>
+		    Thoughtful and intuitive user experiences. All of my
+			designs will be guaranteed to satisfy your users.
+			</p>
+			</div>
+			
+			<div class="col">
+			<img src="images/blog3.jpg" alt="" class="image1 animated tada infinite slow"/>
+			<h3>Personal</h3>
+			<p>
+			I also design and build personal projects. No idea is 
+			small and everyone is deserved to be delevered a voice on
+			web.
+			</p>
+			</div>
+		</div>
+	</section>
+	
+	
+	
+	<section class="resume" id="resume">
+		<h2><span class='ccolor'>Where I Have Worked!</span></h2>
+	<br>
+	<div class="row-halves2">
+		<div class="col">
+			<h4>Web Developer</h4>
+			<h1>
+			I was the lead Front End Developer since July 17 to
+			December 18. Left the job for better opportunity and 
+			the experience is helping me the most from the very 
+			beginning of my journey.
+			</h1>
+			<h3>Front End Professional</h3>
+			<h3>Front End Professional</h3>
+			<h4>Date:July to December</h4>
+		</div>
+	
+		<div class="col">
+			<h4>Web Developer</h4>
+			<h1>
+			I was the lead Front End Developer since July 17 to
+			December 18. Left the job for better opportunity and 
+			the experience is helping me the most from the very 
+			beginning of my journey.
+			</h1>
+			<h3>Front End Professional</h3>
+			<h3>Front End Professional</h3>
+			<h4>Date: July to December</h4>
+		</div>
+		
+		<div class="col">
+			<h4>Web Developer</h4>
+			<h1>
+			I was the lead Front End Developer since July 17 to
+			December 18. Left the job for better opportunity and 
+			the experience is helping me the most from the very 
+			beginning of my journey.
+			</h1>
+			<h3>Front End Professional</h3>
+			<h3>Front End Professional</h3>
+			<h4>Date:July to December</h4>
+		</div>
+	</div>
+	</section>
+	
+	<section class="contact" id="contact">
+		<h2><span class='ccolor'>Contact</span></h2>
+		<br>
+		<div class="container">
+			<form action="">
+				<label for ="name">Name</label>
+				<input type="text" name="name" id="name"/>
+				
+				<label for ="email">E-Mail</label>
+				<input type="text" name="" id="email"/>
+				
+			
+				<label for ="message">Message</label>
+				<textarea name="message" id="message" style="height:200px"> 
+				</textarea>
+				
+				<input type="submit" value ="Message"/>
+			</form>
+		</div>
+	</section>
+
+	
+	<footer>
+		<section class="top-bar">
+			<a href="https://web.facebook.com/psmhossainmahmud.robin"><i class="fa fa-facebook"></i></a>
+			<a href="https://twitter.com/?lang=en"><i class="fa fa-twitter"></i></a>
+			<a href="https://www.pinterest.com/"><i class="fa fa-pinterest"></i></a>
+			<a href="https://www.google.com/"><i class="fa fa-google"></i></a>
+		</section>
+		
+	
+		
+		<section class="bottom-bar">
+	
+		<p> &copy; Mahmudul HR:All Rights Reserved.</p>
+		</section>
+	</footer>
+	
+</body>
+</html>
